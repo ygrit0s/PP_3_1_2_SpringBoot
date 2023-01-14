@@ -1,6 +1,6 @@
-package habsida.ygritos.springboot.repository;
+package habsida.ygrit0s.springboot.repository;
 
-import habsida.ygritos.springboot.entity.User;
+import habsida.ygrit0s.springboot.entity.User;
 
 import java.util.List;
 

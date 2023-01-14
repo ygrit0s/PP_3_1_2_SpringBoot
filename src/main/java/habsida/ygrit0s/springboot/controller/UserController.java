@@ -1,7 +1,7 @@
-package habsida.ygritos.springboot.controller;
+package habsida.ygrit0s.springboot.controller;
 
-import habsida.ygritos.springboot.entity.User;
-import habsida.ygritos.springboot.service.UserService;
+import habsida.ygrit0s.springboot.entity.User;
+import habsida.ygrit0s.springboot.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

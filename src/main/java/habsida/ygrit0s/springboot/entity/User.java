@@ -1,4 +1,4 @@
-package habsida.ygritos.springboot.entity;
+package habsida.ygrit0s.springboot.entity;
 
 import jakarta.persistence.*;
 

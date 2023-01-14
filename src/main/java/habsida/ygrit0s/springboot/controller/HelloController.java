@@ -1,4 +1,4 @@
-package habsida.ygritos.springboot.controller;
+package habsida.ygrit0s.springboot.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;

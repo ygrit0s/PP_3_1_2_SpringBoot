@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>habsida.ygrit0s</groupId>
-    <artifactId>SpringBoot</artifactId>
+    <artifactId>PP_3_1_2_SpringBoot</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>SpringBoot</name>
     <description>The 1st SpringBoot project</description>

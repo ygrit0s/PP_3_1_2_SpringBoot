@@ -1,4 +1,4 @@
-package habsida.ygritos.springboot;
+package habsida.ygrit0s.springboot;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,7 +1,7 @@
-package habsida.ygritos.springboot.service;
+package habsida.ygrit0s.springboot.service;
 
-import habsida.ygritos.springboot.entity.User;
-import habsida.ygritos.springboot.repository.UserDAO;
+import habsida.ygrit0s.springboot.entity.User;
+import habsida.ygrit0s.springboot.repository.UserDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
