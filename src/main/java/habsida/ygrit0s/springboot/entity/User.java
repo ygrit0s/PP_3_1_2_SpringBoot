@@ -7,24 +7,20 @@ import jakarta.persistence.*;
 public class User {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column
 	private Long id;
-	
-	@Column
+
 	private String name;
-	
-	@Column
-	private String lastName;
-	
-	@Column
+
+	private String surname;
+
 	private Byte age;
 	
 	public User() {
 	}
 	
-	public User(String name, String lastName, Byte age) {
+	public User(String name, String surname, Byte age) {
 		this.name = name;
-		this.lastName = lastName;
+		this.surname = surname;
 		this.age = age;
 	}
 	
@@ -44,12 +40,12 @@ public class User {
 		this.name = name;
 	}
 	
-	public String getLastName() {
-		return lastName;
+	public String getSurname() {
+		return surname;
 	}
 	
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
+	public void setSurname(String surname) {
+		this.surname = surname;
 	}
 	
 	public Byte getAge() {
@@ -66,9 +62,9 @@ public class User {
                 
                 User  [ ID =        %s,
                         Name =      %s,
-                        Last Name = %s,
+                        Surname = 	%s,
                         Age =       %s ]
                 """
-				.formatted(id, name, lastName, age);
+				.formatted(id, name, surname, age);
 	}
 }

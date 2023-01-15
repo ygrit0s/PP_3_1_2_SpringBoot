@@ -20,13 +20,13 @@ public class UserController {
 	
 	@GetMapping("/users")
 	public String userList(Model model) {
-		model.addAttribute("userList", userService.userList());
+		model.addAttribute("userList", userService.findAll());
 		return "list";
 	}
 	
 	@GetMapping("/users/{id}")
 	public String getUser(@PathVariable("id") Long id, Model model) {
-		model.addAttribute("user", userService.getUser(id));
+		model.addAttribute("user", userService.findById(id));
 		return "show";
 	}
 	@GetMapping("/users/new")
@@ -39,14 +39,14 @@ public class UserController {
 		if (bindingResult.hasErrors()) {
 			return "new";
 		} else {
-			userService.addUser(user);
+			userService.save(user);
 			return "redirect:/users";
 		}
 	}
 	
 	@GetMapping("/users/edit/{id}")
 	public String updateUser(@PathVariable("id") Long id, Model model) {
-		model.addAttribute("user", userService.getUser(id));
+		model.addAttribute("user", userService.findById(id));
 		return "edit";
 	}
 	@PatchMapping("/users/edit")
@@ -54,14 +54,14 @@ public class UserController {
 		if (bindingResult.hasErrors()) {
 			return "edit";
 		} else {
-			userService.updateUser(user);
+			userService.save(user);
 			return "redirect:/users";
 		}
 	}
 
 	@DeleteMapping("/users/delete/{id}")
 	public String removeUser(@PathVariable("id") Long id) {
-		userService.removeUser(id);
+		userService.delete(id);
 		return "redirect:/users";
 	}
 }
