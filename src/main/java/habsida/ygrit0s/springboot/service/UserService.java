@@ -19,23 +19,19 @@ public class UserService {
 		this.userRepository = userRepository;
 	}
 	
-	public List<User> userList() {
+	public List<User> findAll() {
 		return userRepository.findAll();
 	}
 	
-	public User getUser(Long id) {
+	public User findById(Long id) {
 		return userRepository.findById(id).get();
 	}
 	
-	public void addUser(User user) {
+	public void save(User user) {
 		userRepository.save(user);
 	}
 	
-	public void updateUser(User user) {
-		userRepository.save(user);
-	}
-	
-	public void removeUser(Long id) {
-		userRepository.delete(getUser(id));
+	public void delete(Long id) {
+		userRepository.delete(findById(id));
 	}
 }
